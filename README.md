@@ -1,2 +1,2 @@
 # Code-Portfolio
-Here is a Repository of Examples of my programming work
+Here is a repository of Examples of my programming work
