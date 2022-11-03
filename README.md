@@ -1,2 +1,2 @@
-# Code-Portfolio
-Here is a repository of examples of my programming work
+# Web-Portfolio
+Here is a repository of examples of my javascript programming work
