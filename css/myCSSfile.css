@@ -38,12 +38,12 @@ main {
 /* 
     gif area formatting 
 */
-.gifContainer {
+#gifContainer {
     display: flex;
     flex-wrap: wrap;
 }
 
-.gifContainer img {
+#gifContainer img {
     height: auto;
     width: 100%;
     margin: 0;
@@ -133,7 +133,7 @@ nav .dropdown .dropbtn {
     margin: 0;
 }
 
-.gifContainer .dropdown {
+#gifContainer .dropdown {
     text-align: center;
     margin: 5px;
     display: block;
@@ -153,7 +153,7 @@ nav .dropdown .dropbtn {
     text-align: justify;
 }
 
-.gifContainer .dropdown-content {
+#gifContainer .dropdown-content {
     width: 18%;
 }
 

@@ -32,7 +32,8 @@ console.log("bewLIB.js loaded");
         bewLIB.drawCircle(ctx,x,y,2,color);
 
         n++;
-        setTimeout(drawPhyllotaxis(ctx,x,y,r,n,c,divergence),1000/fps);
+        
+        setTimeout(drawPhyllotaxis(ctx,x,y,r,n,c,divergence));
     }
 
 	function drawCircle(ctx,x,y,radius,color){
