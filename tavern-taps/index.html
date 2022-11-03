@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Tavern Taps Demo - Web Development Portfolio</title>
+	<link href="..\css\myCSSfile.css" rel="stylesheet">
+  <link rel="shortcut icon" href="TemplateData/favicon.ico">
+  <link rel="stylesheet" href="TemplateData/style.css">
+  <script src="TemplateData/UnityProgress.js"></script>
+  <script src="Build/UnityLoader.js"></script>
+  <script>
+    var unityInstance = UnityLoader.instantiate("unityContainer", "Build/TavernTaps04.json", { onProgress: UnityProgress });
+  </script>
+</head>
+
+<body>
+  <header>
+    <section id="title">
+      <h1>Web Development Portfolio</h1>
+      <p>Tavern Taps Demo</p>
+    </section>
+    <nav>
+      <a href="../index.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn"> Phylotaxis Demo</button>
+        <div class="dropdown-content">
+          <a href="phylotaxis\index.html">Play The Demo</a>
+          <a href="phylotaxis\insight.html">Insights into the Demo</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn"> Audio Visualizer Demo</button>
+        <div class="dropdown-content">
+          <a href="audio-visualizer\index.html">Play The Demo</a>
+          <a href="audio-visualizer\insight.html">Insights into the Demo</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 960px; height: 600px"></div>
+      <div id="webgl-footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title">Tavern Taps</div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p><a href="https://benwetzel.carrd.co">Ben Wetzel - 2022</a></p>
+    <p class="quote">"Not all those who wander are lost." - J.R.R. Tolkien</p>
+  </footer>
+</body>
+
+</html>
