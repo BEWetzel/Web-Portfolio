@@ -42,6 +42,7 @@ main {
     display: flex;
     flex-wrap: wrap;
 }
+
 .gifContainer img {
     height: auto;
     width: 100%;
@@ -69,9 +70,14 @@ footer {
     height: 4%;
 }
 
-header h1 {
+#title {
     justify-self: flex-start;
     margin: 10px;
+}
+
+#title h1,
+p {
+    margin: 0;
 }
 
 nav {
@@ -133,7 +139,7 @@ nav .dropdown .dropbtn {
     display: block;
     background: #EDCBB1;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    width:30%;
+    width: 30%;
 }
 
 /*formatting for all dropdown elements*/
