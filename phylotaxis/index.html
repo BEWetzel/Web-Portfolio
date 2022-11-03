@@ -1,39 +1,68 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8" />
-	<title>Drawing with Phylotaxis</title>
+    <meta charset="utf-8" />
+    <title>Drawing with Phylotaxis</title>
+	<link href="..\css\myCSSfile.css" rel="stylesheet">
     <link type="stylesheet" href="styles/default-styles.css">
     <script src="src/index.js"></script>
     <script src="src/bewLIB.js"></script>
-	
+
 </head>
+
 <body>
-    <canvas id="canvas"></canvas>
-    
-    <section id="pControls">
-        <span><input type="number" id="pRadius" value="100"><label for="pRadius"> Flower Radius</label></span>
-    </section>
+    <header>
+        <h1>Phylotaxis Insights</h1>
+        <nav>
+            <a href="..\index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn"> Phylotaxis Demo</button>
+                <div class="dropdown-content">
+                    <a href="#">Play The Demo</a>
+                    <a href="insight.html">Insight into the Demo</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"> Audio Visualizer Demo</button>
+                <div class="dropdown-content">
+                    <a href="..\audio-visualizer\index.html">Play The Demo</a>
+                    <a href="..\audio-visualizer\insight.html">Insight into the Demo</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <canvas id="canvas"></canvas>
 
-    <section id="imageSelection">
-        <select>
-            <option value="imageAddress" selected> Cat </option>
-            <option value="imageAddress"> Triforce </option>
-            <option value="imageAddress"> Pine Tree </option>
-            <option value="imageAddress"> Bill Cipher </option>
-        </select>
-    </section>
+        <section id="pControls">
+            <span><input type="number" id="pRadius" value="100"><label for="pRadius"> Flower Radius</label></span>
+        </section>
 
-    <section id="canvasControls">
-        <span><input id="btnClear" type="button" value="Clear"/></span>
-        <span><input id="btnExport" type="button" value="Export"/></span>
-    </section>
+        <section id="imageSelection">
+            <select>
+                <option value="imageAddress" selected> Cat </option>
+                <option value="imageAddress"> Triforce </option>
+                <option value="imageAddress"> Pine Tree </option>
+                <option value="imageAddress"> Bill Cipher </option>
+            </select>
+        </section>
 
-    <p>
-        Click on the black box to generate blooms.
-        Change the size of the blooms with the flower size control at the bottom.
-        In latter updates, the blooms will draw a pre-loaded picture
-    </p>
+        <section id="canvasControls">
+            <span><input id="btnClear" type="button" value="Clear" /></span>
+            <span><input id="btnExport" type="button" value="Export" /></span>
+        </section>
+
+        <p>
+            Click on the black box to generate blooms.
+            Change the size of the blooms with the flower size control at the bottom.
+            In latter updates, the blooms will draw a pre-loaded picture
+        </p>
+    </main>
+    <footer>
+        <p><a href="https://benwetzel.carrd.co">Ben Wetzel - 2022</a></p>
+        <p class="quote">"Not all those who wander are lost." - J.R.R. Tolkien</p>
+    </footer>
 </body>
+
 </html>

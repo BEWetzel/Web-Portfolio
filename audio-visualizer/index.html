@@ -1,71 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8" />
-	<title>Audio Circle</title>
+	<title>Audio Visualizer Demo</title>
+	<link href="..\css\myCSSfile.css" rel="stylesheet">
 	<link href="styles/default-styles.css" type="text/css" rel="stylesheet" />
 	<script src="./src/loader.js" type="module"></script>
-	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
 </head>
-<body>
-	<h1>Audio Circle</h1>
-<main>
-	<canvas id="frame" width="800" height="400"></canvas>
-	<div id="controls">
-		<section>
-			<button id="playButton" data-playing="no"></button>
-			<button id="fsButton">Full Screen</button>
-		
-			<label>Track: 
-				<select id="trackSelect">
-					<option value="media/New Adventure Theme.mp3" selected>New Adventure Theme</option>
-					<option value="media/Peanuts Theme.mp3">Peanuts Theme</option>
-					<option value="media/The Picard Song.mp3">The Picard Song</option>
-				</select>
-			</label>
-		</section>
-		
-		<section>
-			<span id="volumeDisplay">
-				Volume: <input type="range" id="volumeSlider" min="0" max="2" value="1" step="0.01">
-				<span id="volumeLabel">???</span>
-			</span>
-			<span id="progressBarContainer">
-				<canvas id="progressBar" width="200" height="11"></canvas>
-				<small id="currentTime">???</small> /
-				<small id="endTime">???</small>
-			</span>
-			
-		</section>
-		<section>
-			<!-- we'll use this 4th checkbox soon! -->
-			<ul title="Image Data" id="imageDataLabel"> 
-				<li><input type="checkbox" id="noiseCB"><label for="noiseCB">Show Noise</label></li>
-				<li><input type="checkbox" id="invertCB"><label for="invertCB">Show Invert</label></li>
-				<li><input type="checkbox" id="embossCB"><label for="embossCB">Show Emboss</label></li>
-			</ul>
-			<section id="colorSelect">
-				<p>Top Color</p>
-				<ul title="Top Color" id="topColorSelect">
-					<li><input type="radio" id="redT" name="top" value="red">Red</li>
-					<li><input type="radio" id="greenT" name="top" value="green" checked="">Green</li>
-					<li><input type="radio" id="blueT" name="top" value="blue">Blue</li>
-				</ul>
-				<p>Bottom Color</p>
-				<ul title="Bottom Color" id="bottomColorSelect">
-					<li><input type="radio" id="redB" name="bottom" value="red">Red</li>
-					<li><input type="radio" id="greenB" name="bottom" value="green">Green</li>
-					<li><input type="radio" id="blueB" name="bottom" value="blue" checked="">Blue</li>
-				</ul>
-			</section>
-			
-		  </section>
-	</div>
 
-	<footer>
-		<p>|  Ben Wetzel  |</p>
-		<p>|Copyright 2020|</p>
-	</footer>	
-</main>
+<body>
+	<header>
+		<h1>Audio Visualizer Demo</h1>
+		<nav>
+			<a href="..\index.html">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn"> Phylotaxis Demo</button>
+				<div class="dropdown-content">
+					<a href="..\phylotaxis\index.html">Play The Demo</a>
+					<a href="..\phylotaxis\insight.html">Insight into the Demo</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="dropbtn"> Audio Visualizer Demo</button>
+				<div class="dropdown-content">
+					<a href="#">Play The Demo</a>
+					<a href="insight.html">Insight into the Demo</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<canvas id="frame" width="800" height="400"></canvas>
+		<div id="controls">
+			<section>
+				<button id="playButton" data-playing="no"></button>
+				<button id="fsButton">Full Screen</button>
+
+				<label>Track:
+					<select id="trackSelect">
+						<option value="media/New Adventure Theme.mp3" selected>New Adventure Theme</option>
+						<option value="media/Peanuts Theme.mp3">Peanuts Theme</option>
+						<option value="media/The Picard Song.mp3">The Picard Song</option>
+					</select>
+				</label>
+			</section>
+
+			<section>
+				<span id="volumeDisplay">
+					Volume: <input type="range" id="volumeSlider" min="0" max="2" value="1" step="0.01">
+					<span id="volumeLabel">???</span>
+				</span>
+				<span id="progressBarContainer">
+					<canvas id="progressBar" width="200" height="11"></canvas>
+					<small id="currentTime">???</small> /
+					<small id="endTime">???</small>
+				</span>
+
+			</section>
+			<section>
+				<!-- we'll use this 4th checkbox soon! -->
+				<ul title="Image Data" id="imageDataLabel">
+					<li><input type="checkbox" id="noiseCB"><label for="noiseCB">Show Noise</label></li>
+					<li><input type="checkbox" id="invertCB"><label for="invertCB">Show Invert</label></li>
+					<li><input type="checkbox" id="embossCB"><label for="embossCB">Show Emboss</label></li>
+				</ul>
+				<section id="colorSelect">
+					<p>Top Color</p>
+					<ul title="Top Color" id="topColorSelect">
+						<li><input type="radio" id="redT" name="top" value="red">Red</li>
+						<li><input type="radio" id="greenT" name="top" value="green" checked="">Green</li>
+						<li><input type="radio" id="blueT" name="top" value="blue">Blue</li>
+					</ul>
+					<p>Bottom Color</p>
+					<ul title="Bottom Color" id="bottomColorSelect">
+						<li><input type="radio" id="redB" name="bottom" value="red">Red</li>
+						<li><input type="radio" id="greenB" name="bottom" value="green">Green</li>
+						<li><input type="radio" id="blueB" name="bottom" value="blue" checked="">Blue</li>
+					</ul>
+				</section>
+
+			</section>
+		</div>
+	</main>
+    <footer>
+        <p><a href="https://benwetzel.carrd.co">Ben Wetzel - 2022</a></p>
+        <p class="quote">"Not all those who wander are lost." - J.R.R. Tolkien</p>
+    </footer>
 </body>
+
 </html>
