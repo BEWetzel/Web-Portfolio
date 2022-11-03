@@ -1,0 +1,8 @@
+canvas{ 
+    border: 1px solid black; 
+}
+
+label{
+    font-size: 12px;
+    margin-right:0.75em;
+}

@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Drawing with Phylotaxis</title>
+    <link type="stylesheet" href="styles/default-styles.css">
+    <script src="src/index.js"></script>
+    <script src="src/bewLIB.js"></script>
+	
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    
+    <section id="pControls">
+        <span><input type="number" id="pRadius" value="100"><label for="pRadius"> Flower Radius</label></span>
+    </section>
+
+    <section id="imageSelection">
+        <select>
+            <option value="imageAddress" selected> Cat </option>
+            <option value="imageAddress"> Triforce </option>
+            <option value="imageAddress"> Pine Tree </option>
+            <option value="imageAddress"> Bill Cipher </option>
+        </select>
+    </section>
+
+    <section id="canvasControls">
+        <span><input id="btnClear" type="button" value="Clear"/></span>
+        <span><input id="btnExport" type="button" value="Export"/></span>
+    </section>
+
+    <p>
+        Click on the black box to generate blooms.
+        Change the size of the blooms with the flower size control at the bottom.
+        In latter updates, the blooms will draw a pre-loaded picture
+    </p>
+</body>
+</html>

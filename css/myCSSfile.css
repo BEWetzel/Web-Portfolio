@@ -1,0 +1,228 @@
+/*
+    General Formatting
+*/
+html {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+/* background map image*/
+body {
+    margin: 0;
+    background-image: url("../media/old_naval_map.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #EDCBB1;
+}
+
+/* main text and content area*/
+main {
+    margin: 20%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 1%;
+    background-color: antiquewhite;
+    text-align: left;
+    width:60%;
+}
+
+img {
+    height: auto;
+    width: 100%;
+    margin: 0;
+    font-style: italic;
+}
+
+
+.gifContainer{
+    display:flex;
+}
+
+/*set background of sections in design docs*/
+.infoPoint {
+    background-color: #81b29a;
+}
+
+.titleScreen {
+    text-align: center;
+}
+
+/*
+    Header Item Formatting
+*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+}
+
+header,
+footer {
+    background-color: #002500;
+    align-items: center;
+    justify-content: space-between;
+    color: #929982;
+    height: 4%;
+}
+
+header h1 {
+    justify-self: flex-start;
+    margin: 10px;
+}
+
+nav {
+    display: flex;
+    justify-self: flex-end;
+    justify-content: center;
+    margin: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width:30%;
+}
+
+/*
+    Navbar element internal formatting
+*/
+nav div {
+    margin: 0px;
+    padding: 0rem;
+}
+
+
+/*set text formatting of navbar elements*/
+nav a,
+nav .dropdown .dropbtn {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: inherit;
+    overflow: hidden;
+}
+
+a:visited {
+    color: #81b29a;
+}
+
+nav a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #EDCBB1;
+    color: #002500;
+}
+
+/* give displayed elements of nav bar common padding*/
+nav a,
+nav .dropdown .dropbtn {
+    display: block;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    color: inherit;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+main .dropdown{
+    text-align: center;
+    margin:5px;
+    display:block;
+}
+
+/*formatting for all dropdown elements*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #EDCBB1;
+    width: 10%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: justify;
+}
+main .dropdown-content{
+    width: 20%;
+}
+
+/* Link fomratting within Dropdown menues */
+.dropdown-content a {
+    float: none;
+    color: #002500;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*
+    Footer Formatting
+*/
+
+footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+footer a:link {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer a:active {
+    text-decoration: underline;
+}
+
+.quote {
+    font-size: smaller;
+}
+
+
+/* Grid Layout*/
+#objectives {
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+        "plunder"
+        "adventure"
+        "explore"
+        "solve";
+    grid-template-rows: auto auto auto auto;
+}
+
+@media screen and (min-width: 700px) {
+    #objectives {
+        display: grid;
+        height: 100vh;
+        grid-template-areas:
+            "plunder adventure"
+            "explore solve";
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+}
